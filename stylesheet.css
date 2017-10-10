@@ -1,0 +1,68 @@
+html, body {
+    margin: 0px;
+    padding: 0px; 
+    height: 100%; 
+}
+
+/* GENERAL CLASSES  */
+
+.button-default {
+    background-color: #FF365C; 
+    border-radius: 10px; 
+    border-style: none; 
+    color: inherit; 
+    padding: 10px; 
+    margin: 20px; 
+    transition: background-color 0.5s ease; 
+}
+
+.button-default:hover {
+    background-color: white; 
+    color: #FF365C; 
+    cursor: pointer; 
+}
+
+.button-curved {
+    border-top-left-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+}
+
+.big-font {
+    font-size: 25px;
+}
+
+.header {
+    font-size: 40px; 
+}
+
+/* MAIN.SIGNUP SPECIFIC CLASS  */
+
+main.signup {
+    padding: 10px; 
+    text-align: center; 
+    background-image: url('IMG/b-signup.jpg');
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    position: relative; 
+    z-index: 0; 
+    color: white; 
+    height: 100%; 
+}
+
+main.signup .pseudo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    opacity: 0.3; 
+    top: 0px; 
+    left: 0px;
+    background-color: #7F1A2E; 
+    z-index: -1
+}
+
+main.signup section {
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+}
+
