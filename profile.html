@@ -18,9 +18,10 @@
     </nav>
 
     <!-- MAIN BODY -->
-    <main class = "profile">
+    <main class = "profile" id = "view-profile">
         <h2 class = "header">Your Profile.</h2>
         <div class = "profile-container">
+            <button class = "button-connect medium-font" id = "edit-button">Edit Profile</button>
             <img src = "IMG/profile.jpg" class = "profile-image"/>
             <div class = "profile-info">
                 <div class = "profile-form-group">
@@ -51,7 +52,7 @@
         </div>
     </main>
 
-    <main class = "profile">
+    <main class = "profile hidden" id = "edit-profile">
         <h2 class = "header">Your Profile.</h2>
         <div class = "profile-container">
             <img src = "IMG/profile.jpg" class = "profile-image"/>
@@ -81,8 +82,9 @@
                     <input type = "text" value = "B.S. Computer Science and Engineering" class = "profile-input-field">
                 </div>
             </div>
-            <button class = "button-save medium-font">Save Changes</button>
+            <button class = "button-save medium-font" id = "profile-save-button">Save Changes</button>
         </div>
     </main>
+    <script src = "JS/edit.js"></script>
 </body>
 </html>

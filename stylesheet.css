@@ -56,7 +56,7 @@ html, body {
 }
 
 .hidden {
-    visibility: hidden; 
+    display: none; 
 }
 
 form {
