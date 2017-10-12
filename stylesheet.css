@@ -27,8 +27,28 @@ html, body {
     border-bottom-right-radius: 0px; 
 }
 
+.button-save {
+    background-color: #18C29C;
+    border-style: none;
+    padding: 10px; 
+    margin: 10px; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.button-save:hover {
+    background-color: white;
+    border: 2px solid #18C29C;
+    cursor: pointer; 
+    color: #18C29C;
+}
+
 .big-font {
     font-size: 25px;
+}
+
+.medium-font {
+    font-size: 18px; 
 }
 
 .header {
@@ -43,8 +63,6 @@ form {
     text-align: left; 
 }
 
-.form-group {
-}
 
 .form-group .input-field {
     border-radius: 5px; 
@@ -53,6 +71,17 @@ form {
     margin-top: 5px;
     margin-bottom: 5px; 
 }
+
+.profile-input-field {
+    padding: 5px; 
+    border: 2px solid #efefef; 
+    border-radius: 5px; 
+}
+
+textarea {
+    resize: none; 
+}
+
 
 /* MAIN.SIGNUP SPECIFIC CLASS  */
 
@@ -150,7 +179,8 @@ main.profile .profile-image {
 }
 
 main.profile .profile-info { 
-    width: 50%; 
+    width: 60%; 
+    min-width: 500px; 
     margin: 30px auto; 
     overflow: auto;  
     padding-left: 20px;
@@ -160,4 +190,6 @@ main.profile .profile-info {
 main.profile .profile-form-group {
     float: left; 
     width: 33%; 
+    max-width: 33%;
 }
+
