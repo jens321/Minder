@@ -58,6 +58,28 @@ form {
     margin-bottom: 5px; 
 }
 
+.button-connect {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    background-color: #FF0B23; 
+    border-style: none; 
+    padding: 15px; 
+    color: white; 
+    transition: background-color 0.5s ease; 
+}
+
+.button-connect:hover {
+    background-color: white; 
+    color: #FF365C; 
+    cursor: pointer; 
+    border: 1px solid #FF365C; 
+}
+
+a {
+    text-decoration: none; 
+}
+
 /* MAIN.SIGNUP SPECIFIC CLASS  */
 
 main.signup {
@@ -141,6 +163,7 @@ main.profile {
     border-top-left-radius: 0px; 
     border-bottom-right-radius: 0px;
     border: 1px solid #efefef; 
+    position: relative; 
 }
 
 main.profile h2 {
@@ -187,7 +210,7 @@ main.discovery .search-bar input {
     margin-bottom: 5px; 
 }
 
-main.discovery .search-results {
+.search-results {
     width: 100%; 
     margin: 0px auto;   
     box-shadow: 10px 10px 10px #efefef;
@@ -197,24 +220,29 @@ main.discovery .search-results {
     border: 2px solid #efefef;
 }
 
-main.discovery .search-result {
+.search-result {
     padding: 20px; 
     overflow: auto; 
     border-bottom: 2px solid #efefef; 
 }
 
-main.discovery .search-result img {
+.search-result img {
     width: 100px;
     height: 100px; 
 }
 
-main.discovery .search-result-info {
+.search-result-info {
     float: left; 
     max-width: 15%; 
     padding: 0px; 
     margin-right: 4%; 
 }
 
-main.discovery .search-result-info h4 {
+.search-result-info h4 {
     margin: 0px;
+}
+
+.similar-profiles {
+    margin: 40px auto; 
+    width: 80%;
 }
