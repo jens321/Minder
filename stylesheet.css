@@ -59,6 +59,11 @@ html, body {
     font-size: 40px; 
 }
 
+.header-style {
+    text-align: center;
+    color: #FF4E61; 
+}
+
 .hidden {
     display: none; 
 }
@@ -332,4 +337,33 @@ main.connect .connect-message button:hover {
     border: 2px solid #18C29C;
     cursor: pointer; 
     color: #18C29C;
+}
+
+/* MESSAGE-CONTAINER SPECIFIC CLASS  */
+main.message-container aside, main.message-container section {
+    float: left;
+    overflow: auto; 
+}
+
+main.message-container aside {
+    width: 29.7%;
+    border: 2px solid #efefef; 
+    border-left: none; 
+}
+
+main.message-container section {
+    width: 70%; 
+    border-top: 2px solid #efefef; 
+    height: 500px; 
+    position: relative; 
+}
+
+
+main.message-container section .message-bar {
+    width: 100%;
+    position: absolute; 
+    bottom: 0; 
+    border-radius: 5px; 
+    border: 2px solid #efefef; 
+    padding: 10px; 
 }
