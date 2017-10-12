@@ -82,6 +82,28 @@ textarea {
     resize: none; 
 }
 
+.button-connect {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    background-color: #FF0B23; 
+    border-style: none; 
+    padding: 15px; 
+    color: white; 
+    transition: background-color 0.5s ease; 
+}
+
+.button-connect:hover {
+    background-color: white; 
+    color: #FF365C; 
+    cursor: pointer; 
+    border: 1px solid #FF365C; 
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+}
 
 /* MAIN.SIGNUP SPECIFIC CLASS  */
 
@@ -166,6 +188,7 @@ main.profile {
     border-top-left-radius: 0px; 
     border-bottom-right-radius: 0px;
     border: 1px solid #efefef; 
+    position: relative; 
 }
 
 main.profile h2 {
@@ -193,3 +216,71 @@ main.profile .profile-form-group {
     max-width: 33%;
 }
 
+/* MAIN.DISCOVERY SPECIFIC CLASS  */
+
+main.discovery {
+    width: 90%;
+    margin: 20px auto; 
+}
+
+main.discovery h2 {
+    text-align: center; 
+    color: #CC4653; 
+}
+
+main.discovery .search-bar input {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 2px solid #efefef; 
+    padding: 10px; 
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.search-results {
+    width: 100%; 
+    margin: 0px auto;   
+    box-shadow: 10px 10px 10px #efefef;
+    border-radius: 10px;
+    border-top-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+    border: 2px solid #efefef;
+}
+
+.search-result {
+    padding: 20px; 
+    overflow: auto; 
+    border-bottom: 2px solid #efefef; 
+}
+
+.search-result img {
+    width: 100px;
+    height: 100px; 
+}
+
+.search-result-info {
+    float: left; 
+    max-width: 15%; 
+    padding: 0px; 
+    margin-right: 4%; 
+}
+
+.search-result-info h4 {
+    margin: 0px;
+}
+
+.similar-profiles {
+    margin: 40px auto; 
+    width: 80%;
+}
+
+/* MAIN.CONNECT SPECIFIC CLASS  */
+main.connect {
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+main.connect h2{
+    text-align: center; 
+    color: #CC4653; 
+}
