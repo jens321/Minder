@@ -31,6 +31,10 @@ html, body {
     font-size: 25px;
 }
 
+.medium-font {
+    font-size: 20px; 
+}
+
 .header {
     font-size: 40px; 
 }
@@ -160,4 +164,57 @@ main.profile .profile-info {
 main.profile .profile-form-group {
     float: left; 
     width: 33%; 
+}
+
+/* MAIN.DISCOVERY SPECIFIC CLASS  */
+
+main.discovery {
+    width: 90%;
+    margin: 20px auto; 
+}
+
+main.discovery h2 {
+    text-align: center; 
+    color: #CC4653;; 
+}
+
+main.discovery .search-bar input {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 2px solid #efefef; 
+    padding: 10px; 
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+main.discovery .search-results {
+    width: 100%; 
+    margin: 0px auto;   
+    box-shadow: 10px 10px 10px #efefef;
+    border-radius: 10px;
+    border-top-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+    border: 2px solid #efefef;
+}
+
+main.discovery .search-result {
+    padding: 20px; 
+    overflow: auto; 
+    border-bottom: 2px solid #efefef; 
+}
+
+main.discovery .search-result img {
+    width: 100px;
+    height: 100px; 
+}
+
+main.discovery .search-result-info {
+    float: left; 
+    max-width: 15%; 
+    padding: 0px; 
+    margin-right: 4%; 
+}
+
+main.discovery .search-result-info h4 {
+    margin: 0px;
 }
