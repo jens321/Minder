@@ -55,6 +55,10 @@ html, body {
     font-size: 14px; 
 }
 
+.xs-font {
+    font-size: 12px; 
+}
+
 .header {
     font-size: 40px; 
 }
@@ -124,6 +128,16 @@ h4 {
 
 a h3 {
     color: #FF6778; 
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px; 
+    border-radius: 10px; 
+}
+
+.float {
+    float: left; 
 }
 
 /* MAIN.SIGNUP SPECIFIC CLASS  */
@@ -346,24 +360,64 @@ main.message-container aside, main.message-container section {
 }
 
 main.message-container aside {
-    width: 29.7%;
+    width: 27.7%;
     border: 2px solid #efefef; 
+    border-bottom: none; 
     border-left: none; 
+    padding-left: 2%; 
 }
 
 main.message-container section {
     width: 70%; 
     border-top: 2px solid #efefef; 
+    border-bottom: 2px solid #efefef;
     height: 500px; 
     position: relative; 
 }
 
 
 main.message-container section .message-bar {
-    width: 100%;
+    width: 90%;
+    margin-left: 3.5%; 
     position: absolute; 
-    bottom: 0; 
+    bottom: 60px; 
     border-radius: 5px; 
     border: 2px solid #efefef; 
     padding: 10px; 
+}
+
+main.message-container section button {
+    position: absolute;
+    bottom: 0px; 
+    margin-left: 3.5%;
+}
+
+main.message-container aside .search-bar {
+    width: 90%;
+    border-radius: 5px; 
+    border: 2px solid #efefef; 
+    padding: 10px;
+}
+
+main.message-container aside .contact {
+    margin-top: 20px; 
+    border-bottom: 2px solid #efefef; 
+    overflow: auto; 
+}
+
+main.message-container aside h3 {
+    color: #FF4E61; 
+}
+
+main.message-container aside .contact h4 {
+    margin-top: 0px; 
+    margin-left: 20px; 
+    margin-bottom: 5px; 
+}
+
+main.message-container aside .contact p {
+    float: left; 
+    margin-left: 20px; 
+    max-width: 50%; 
+    margin-top: 0px; 
 }
