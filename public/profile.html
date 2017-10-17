@@ -54,9 +54,14 @@
     </main>
 
     <main class = "profile hidden" id = "edit-profile">
+        <div class = "pseudo hidden"></div>
         <h2 class = "header">Your Profile.</h2>
         <div class = "profile-container">
             <img src = "IMG/profile.jpg" class = "profile-image"/>
+            <div class = "image-options">
+                <button id = "take-picture-button">Take a picture</button>
+                <button id = "upload-image-button">Upload an image</button> 
+            </div>
             <input type = "file" class = "hidden" id = "upload-file-input-field" onchange = "extractFile(event)"/> 
             <div class = "profile-info">
                 <div class = "profile-form-group">
@@ -92,17 +97,21 @@
             </div>
             <button class = "button-save medium-font" id = "profile-save-button">Save Changes</button>
         </div>
+        <div class = "webcam-modal hidden">
+            <div class = "close-webcam-modal">
+                <button id = "close-webcam-modal-button">X</button>
+            </div>
+            <div class="camera">
+                <video id="video">Video stream not available.</video>
+                <button id="startbutton">Take photo</button> 
+            </div>
+            <canvas id="canvas" class = "hidden">
+            </canvas>
+            <div class="output">
+                <img id="photo" alt="The screen capture will appear in this box."> 
+            </div>
+        </div>
     </main>
-
-    <div class="camera">
-        <video id="video">Video stream not available.</video>
-        <button id="startbutton">Take photo</button> 
-      </div>
-      <canvas id="canvas">
-      </canvas>
-      <div class="output">
-        <img id="photo" alt="The screen capture will appear in this box."> 
-      </div>
     <script src = "JS/edit.js"></script>
     <script src = "JS/tag.js"></script>
     <script src = "JS/upload.js"></script>

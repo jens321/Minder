@@ -1,17 +1,28 @@
+document.getElementById("take-picture-button").addEventListener('click', function ( event ) {
+  document.getElementsByClassName("webcam-modal")[0].classList.remove("hidden"); 
+  openWebCamModal(); 
+  document.getElementsByClassName("pseudo")[0].classList.remove("hidden"); 
+});
 
 
-(function() {
+document.getElementById("close-webcam-modal-button").addEventListener('click', function ( event ) {
+  document.getElementsByClassName("webcam-modal")[0].classList.add("hidden");
+  MediaStream.stop(); 
+  document.getElementsByClassName("pseudo")[0].classList.add("hidden");
+});
+
+var streaming = false; 
+var openWebCamModal = function() {
     // The width and height of the captured photo. We will set the
     // width to the value defined here, but the height will be
     // calculated based on the aspect ratio of the input stream.
-  
     var width = 320;    // We will scale the photo width to this
     var height = 0;     // This will be computed based on the input stream
   
     // |streaming| indicates whether or not we're currently streaming
     // video from the camera. Obviously, we start at false.
   
-    var streaming = false;
+    streaming = false;
   
     // The various HTML elements we need to configure or control. These
     // will be set by the startup() function.
@@ -40,9 +51,11 @@
         function(stream) {
           if (navigator.mozGetUserMedia) {
             video.mozSrcObject = stream;
+            MediaStream = stream.getTracks()[0];
           } else {
             var vendorURL = window.URL || window.webkitURL;
             video.src = vendorURL.createObjectURL(stream);
+            MediaStream = stream.getTracks()[0];
           }
           video.play();
         },
@@ -107,12 +120,12 @@
         photo.setAttribute('src', data);
         document.getElementsByClassName("profile-image")[0].setAttribute('src', data); 
       } else {
-        clearphoto();
+        // clearphoto();  
       }
     }
   
     // Set up our event listener to run the startup process
     // once loading is complete.
-    window.addEventListener('load', startup, false);
-  })();
+    startup(); 
+  }; 
   

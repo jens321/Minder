@@ -1,4 +1,4 @@
-document.getElementsByClassName("profile-image")[0].addEventListener('click', function ( event ) {
+document.getElementById("upload-image-button").addEventListener('click', function ( event ) {
     document.getElementById("upload-file-input-field").click();  
 });
 
