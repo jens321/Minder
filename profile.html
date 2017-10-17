@@ -57,6 +57,7 @@
         <h2 class = "header">Your Profile.</h2>
         <div class = "profile-container">
             <img src = "IMG/profile.jpg" class = "profile-image"/>
+            <input type = "file" class = "hidden" id = "upload-file-input-field" onchange = "extractFile(event)"/> 
             <div class = "profile-info">
                 <div class = "profile-form-group">
                     <h3>Full Name</h3>
@@ -94,5 +95,6 @@
     </main>
     <script src = "JS/edit.js"></script>
     <script src = "JS/tag.js"></script>
+    <script src = "JS/upload.js"></script>
 </body>
 </html>
