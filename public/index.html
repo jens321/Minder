@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minder</title>
+        <link href = "stylesheet.css" type = "text/css" rel = "stylesheet" /> 
+    </head>
+<body>
+
+    <!-- MAIN BODY -->
+    <main class = "signup">
+        <div class = "pseudo"></div>
+        <span class = "header hidden" id = "icon-close">X</span>
+        <section> 
+            <h1 class = "header">Minder</h1>
+            <button class = "button-default button-curved big-font" id = "signup-button">Signup</button>
+            <a href = "profile.html"><button class = "button-default button-curved big-font" id = "login-button">Login</button></a>
+        </section>
+
+        <!-- SIGNUP MODAL -->
+        <section class = "modal hidden" id = "signup-modal">
+            <form>
+                <h2 class = "header">Signup</h2>
+                <div class = "form-group">
+                    <label for = "user-email" class = "big-font">Email Address</label><br />
+                    <input type = "email" class = "input-field" placeholder = "Enter email" />
+                </div>
+
+                <br />
+
+                <div class = "form-group">
+                    <label for = "user-password" class = "big-font">Password</label><br />
+                    <input type = "password" class = "input-field" placeholder = "Enter password" />
+                </div>
+                </form>
+            </form>
+        </section>
+
+        <!-- LOGIN MODAL -->
+        <section class = "modal hidden" id = "login-modal">
+            <form>
+                <h2 class = "header">Login</h2>
+                <div class = "form-group">
+                    <label for = "user-email" class = "big-font">Email Address</label><br />
+                    <input type = "email" class = "input-field" placeholder = "Enter email" />
+                </div>
+
+                <br />
+
+                <div class = "form-group">
+                    <label for = "user-password" class = "big-font">Password</label><br />
+                    <input type = "password" class = "input-field" placeholder = "Enter password" />
+                </div>
+            </form>
+        </section>
+    </main>
+<script src = "JS/modal.js"></script>
+</body>
+</html>
