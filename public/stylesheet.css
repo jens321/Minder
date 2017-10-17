@@ -377,18 +377,14 @@ main.message-container section {
 
 main.message-container section .message-bar {
     width: 90%;
-    margin-left: 3.5%; 
-    position: absolute; 
-    bottom: 60px; 
+    margin-left: 2.5%; 
     border-radius: 5px; 
     border: 2px solid #efefef; 
     padding: 10px; 
 }
 
-main.message-container section button {
-    position: absolute;
-    bottom: 0px; 
-    margin-left: 3.5%;
+main.message-container section button { 
+    margin-left: 2.5%;
 }
 
 main.message-container aside .search-bar {
@@ -549,4 +545,48 @@ main.profile .close-webcam-modal button:hover {
 
 main.profile .image-options {
     margin-top: 10px; 
+}
+
+.float-right {
+    float: right;
+    clear: both;
+}
+
+.float-left {
+    float: left; 
+    clear: both; 
+}
+
+.message {
+    padding: 10px;
+    background-color: #FF4E61;
+    color: white; 
+    max-width: 300px; 
+    margin: 5px;
+    margin-left: 17px; 
+    margin-right: 27px; 
+    display: inline-block; 
+    border-radius: 5px; 
+    max-width: 200px; 
+}
+
+.message-box {
+    overflow: auto; 
+    height: 400px; 
+}
+
+#toggle-user-button {
+    background-color: #18C29C;
+    border-style: none;
+    padding: 10px; 
+    margin: 10px; 
+    color: white; 
+    font-weight: bold; 
+}
+
+#toggle-user-button:hover {
+    background-color: white;
+    border: 2px solid #18C29C;
+    cursor: pointer; 
+    color: #18C29C;
 }
