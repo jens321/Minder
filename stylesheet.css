@@ -420,3 +420,43 @@ main.message-container aside .contact p {
     max-width: 50%; 
     margin-top: 0px; 
 }
+
+/* TAG STYLING */
+
+.tag-list {
+    display: flex; 
+    padding: 5px; 
+    border: 2px solid #efefef;
+    padding: 2px; 
+    overflow: auto; 
+}
+
+.tag-element {
+    background-color: rgb(37, 149, 194); 
+    color: white; 
+    padding: 5px; 
+    margin-right: 5px; 
+    width: 70px; 
+}
+
+#tag-wrapper {
+    display: inline-flex;
+    padding: 7px;   
+}
+
+#tag-input-field {
+    flex: 1;  
+    border: none; 
+}
+
+#tag-input-field:focus {
+    outline: none; 
+}
+
+.close-tag {
+    border-style: none;
+    background-color: rgb(37, 149, 194);
+    display: inline-block; 
+    color: white; 
+    font-size: 12px; 
+}

@@ -76,7 +76,13 @@
                 </div>
                 <div class = "profile-form-group">
                     <h3>Tags</h3>
-                    <input type = "text" value = "HTML, CSS, JavaScript" class = "profile-input-field">
+                    <div class = "tag-list">
+                        <div id = "tag-wrapper">
+                            <span class = "tag-element">HTML <button class = "close-tag">X</button></span>
+                            <span class = "tag-element">CSS <button class = "close-tag">X</button></span>
+                        </div>
+                        <input type = "text" value = "" id = "tag-input-field">
+                    </div>
                 </div>
                 <div class = "profile-form-group">
                     <h3>Education</h3>
@@ -87,5 +93,6 @@
         </div>
     </main>
     <script src = "JS/edit.js"></script>
+    <script src = "JS/tag.js"></script>
 </body>
 </html>
